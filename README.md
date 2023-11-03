@@ -1,5 +1,5 @@
 # Chromium Extension Playground
-![Chromium Logo](logo.png)
+![Chromium Logo](logo.png){:width="100px" height="100px"}
 
 ¡Bienvenido al Chromium Extension Playground! Este repositorio es un lugar donde puedes encontrar y compartir extensiones de navegador basadas en Chromium. Ya sea que estés buscando inspiración para tu próxima extensión o quieras compartir tu propio trabajo, este es el lugar perfecto.
 
