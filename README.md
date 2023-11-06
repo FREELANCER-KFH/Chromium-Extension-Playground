@@ -1,33 +1,33 @@
 # Chromium Extension Playground
 <img src="logo.png" width="100" height="100" />
 
-¡Bienvenido al Chromium Extension Playground! Este repositorio es un lugar donde puedes encontrar y compartir extensiones de navegador basadas en Chromium. Ya sea que estés buscando inspiración para tu próxima extensión o quieras compartir tu propio trabajo, este es el lugar perfecto.
+Welcome to the Chromium Extension Playground! This repository is a place where you can discover and share Chromium-based browser extensions. Whether you're looking for inspiration for your next extension or want to showcase your own work, this is the perfect place.
 
-## ¿Qué encontrarás aquí?
-- **Extensiones Geniales:** Descubre una variedad de extensiones útiles, creativas y entretenidas creadas por la comunidad.
+## What Will You Find Here?
+- **Cool Extensions:** Discover a variety of useful, creative, and entertaining extensions created by the community.
 
-- **Recursos y Tutoriales:** Encuentra enlaces a recursos útiles y tutoriales para ayudarte a desarrollar tus propias extensiones de Chromium.
+- **Resources and Tutorials:** Find links to useful resources and tutorials to help you develop your own Chromium extensions.
 
-- **Colaboración y Compartir:** Si tienes una extensión que te gustaría compartir con otros desarrolladores, puedes contribuir a este repositorio y mostrar tu trabajo.
+- **Collaboration and Sharing:** If you have an extension you'd like to share with other developers, you can contribute to this repository and showcase your work.
 
-## Cómo contribuir
-Si deseas contribuir a este repositorio, aquí hay algunos pasos básicos:
+## How to Contribute
+If you'd like to contribute to this repository, here are some basic steps:
 
-1. Fork este repositorio.
+1. Fork this repository.
 
-2. Clona tu fork a tu máquina local.
+2. Clone your fork to your local machine.
 
-3. Agrega tu extensión en un directorio apropiado o crea uno nuevo.
+3. Add your extension in an appropriate directory or create a new one.
 
-4. Documenta tu extensión en un archivo `README.md` dentro del directorio de tu extensión. Asegúrate de incluir detalles sobre cómo instalar y utilizar la extensión.
+4. Document your extension in a `README.md` file within your extension's directory. Make sure to include details on how to install and use the extension.
 
-5. Envía un Pull Request (PR) para que revisemos tu contribución.
+5. Submit a Pull Request (PR) for us to review your contribution.
 
-## Normas de contribución
-Para mantener un entorno de colaboración armonioso, por favor, sigue estas normas al contribuir:
+## Contribution Guidelines
+To maintain a harmonious collaboration environment, please follow these guidelines when contributing:
 
-- Asegúrate de tener los derechos o permisos necesarios para compartir la extensión.
+- Ensure you have the necessary rights or permissions to share the extension.
 
-- Proporciona una descripción clara y detallada de tu extensión en el archivo `README.md`.
+- Provide a clear and detailed description of your extension in the `README.md` file.
 
-- Adhiérete a las buenas prácticas de desarrollo de extensiones de Chromium.
+- Adhere to best practices for Chromium extension development.
