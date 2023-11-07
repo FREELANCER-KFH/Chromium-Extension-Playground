@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "KFH Text Editor",
+    "version": "1.0.0",
+    "description": "This is a text editor extension for chromium based browsers. Developed by KFH.",
+    "icons": {
+        "128": "icon.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
