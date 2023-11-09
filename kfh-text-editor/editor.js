@@ -27,6 +27,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  //Funcion para eliminar el documento
+  function eliminar() {
+    let file = window.prompt("Escribe el nombre del archivo:");
+    if (file) {
+      // Eliminamos el contenido del editor en el archivo
+      new FileWriter(file).delete(texto.value);
+    }
+  }
+
   // Eventos
   botones.addEventListener("click", function(event) {
     let elemento = event.target;
@@ -36,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
       abrir();
     } else if (elemento.id === "guardar") {
       guardar();
+    } else if (elemento.id === "eliminar") {
+      eliminar();
     }
   });
 });
