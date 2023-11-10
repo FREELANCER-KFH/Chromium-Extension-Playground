@@ -27,6 +27,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  // Función para guardar el documento con otro nombre
+  function guardarComo() {
+    let file = window.prompt("Escribe el nombre del archivo:");
+    if (file) {
+      // Guardamos el contenido del editor en el archivo
+      new FileWriter(file).write(texto.value);
+    }
+  }
+
   //Funcion para eliminar el documento
   function eliminar() {
     let file = window.prompt("Escribe el nombre del archivo:");
@@ -34,6 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
       // Eliminamos el contenido del editor en el archivo
       new FileWriter(file).delete(texto.value);
     }
+  }
+
+  // Función para imprimir el documento
+  function imprimir() {
+    window.print();
   }
 
   // Eventos
@@ -45,8 +59,13 @@ document.addEventListener("DOMContentLoaded", function() {
       abrir();
     } else if (elemento.id === "guardar") {
       guardar();
-    } else if (elemento.id === "eliminar") {
+    } else if (elemento.id === "guardar-como") {
+      guardarComo();
+    }
+    else if (elemento.id === "eliminar") {
       eliminar();
+    } else if (elemento.id === "imprimir") {
+      imprimir();
     }
   });
 });
