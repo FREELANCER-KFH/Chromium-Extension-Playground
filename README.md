@@ -1,5 +1,5 @@
 # Chromium Extension Playground
-<img src="logo.png" width="100" height="100" />
+<img src="logo.png" width="120" height="120" />
 
 Welcome to the Chromium Extension Playground! This repository is a place where you can discover and share Chromium-based browser extensions. Whether you're looking for inspiration for your next extension or want to showcase your own work, this is the perfect place.
 
