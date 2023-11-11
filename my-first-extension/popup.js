@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () { 
+document.addEventListener('DOMContentLoaded', main());
+
+function main() {
   let btnCambiarColor = document.getElementById('cambiarColor')
   let input = document.getElementById('color')
   btnCambiarColor.addEventListener('click', cambiarColor(input.value)); 
@@ -14,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let btnCambiarBackground = document.getElementById('cambiarBackground')
   let inputBackground = document.getElementById('background')
   btnCambiarBackground.addEventListener('click', cambiarBackground(inputBackground.value));
-});
+}
 
 function cambiarColor(input) { 
   let color = document.body.style
