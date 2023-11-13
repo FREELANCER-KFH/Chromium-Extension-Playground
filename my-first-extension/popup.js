@@ -53,3 +53,23 @@ function cambiarBackground(inputBackground) {
   let background = document.body.style
   background.backgroundImage=inputBackground.value
 }
+
+function cambiarBorder(inputBorder) {
+  let border = document.body.style
+  border.border=inputBorder.value
+}
+
+function cambiarRadius(inputRadius) {
+  let radius = document.body.style
+  radius.borderRadius=inputRadius.value
+}
+
+function cambiarMargin(inputMargin) {
+  let margin = document.body.style
+  margin.margin=inputMargin.value
+}
+
+function cambiarPadding(inputPadding) {
+  let padding = document.body.style
+  padding.padding=inputPadding.value
+}
