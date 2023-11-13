@@ -16,6 +16,22 @@ function main() {
   let btnCambiarBackground = document.getElementById('cambiarBackground')
   let inputBackground = document.getElementById('background')
   btnCambiarBackground.addEventListener('click', cambiarBackground(inputBackground.value));
+
+  let btnCambiarBorder = document.getElementById('cambiarBorder')
+  let inputBorder = document.getElementById('border')
+  btnCambiarBorder.addEventListener('click', cambiarBorder(inputBorder.value));
+
+  let btnCambiarBorderRadius = document.getElementById('cambiarBorderRadius')
+  let inputRadius = document.getElementById('borderRadius')
+  btnCambiarBorderRadius.addEventListener('click', cambiarRadius(inputRadius.value));
+
+  let btnCambiarMargin = document.getElementById('cambiarMargin')
+  let inputMargin = document.getElementById('margin')
+  btnCambiarMargin.addEventListener('click', cambiarMargin(inputMargin.value));
+
+  let btnCambiarPadding = document.getElementById('cambiarPadding')
+  let inputPadding = document.getElementById('padding')
+  btnCambiarPadding.addEventListener('click', cambiarPadding(inputPadding.value));
 }
 
 function cambiarColor(input) { 
