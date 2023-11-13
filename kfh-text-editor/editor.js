@@ -50,6 +50,53 @@ document.addEventListener("DOMContentLoaded", function() {
     window.print();
   }
 
+    // Función para copiar el contenido del editor
+  function copiar() {
+    const texto = document.getElementById("texto");
+    texto.select();
+
+    navigator.clipboard.writeText(texto.value)
+      .then(() => {
+        console.log('Texto copiado con éxito');
+      })
+      .catch(err => {
+        console.error('Error al copiar texto: ', err);
+      });
+  }
+
+  // Función para cortar el contenido del editor
+  function cortar() {
+    const texto = document.getElementById("texto");
+
+    const textoCortado = texto.value.substring(texto.selectionStart, texto.selectionEnd);
+    navigator.clipboard.writeText(textoCortado)
+      .then(() => {
+        console.log('Texto cortado con éxito');
+      })
+      .catch(err => {
+        console.error('Error al cortar texto: ', err);
+      });
+
+    texto.value = texto.value.substring(0, texto.selectionStart) + texto.value.substring(texto.selectionEnd);
+  }
+
+  // Función para pegar el contenido en el editor
+  function pegar() {
+    const texto = document.getElementById("texto");
+    
+    navigator.clipboard.readText()
+      .then(clipText => {
+        const currentText = texto.value;
+        const selectionStart = texto.selectionStart;
+        const selectionEnd = texto.selectionEnd;
+        const newText = currentText.substring(0, selectionStart) + clipText + currentText.substring(selectionEnd);
+        texto.value = newText;
+      })
+      .catch(err => {
+        console.error('Error al pegar texto: ', err);
+      });
+  }
+  
   // Eventos
   botones.addEventListener("click", function(event) {
     let elemento = event.target;
@@ -66,6 +113,12 @@ document.addEventListener("DOMContentLoaded", function() {
       eliminar();
     } else if (elemento.id === "imprimir") {
       imprimir();
+    } else if (elemento.id === "copiar") {
+      copiar();
+    } else if (elemento.id === "cortar") {
+      cortar();
+    } else if (elemento.id === "pegar") {
+      pegar();
     }
   });
 });
