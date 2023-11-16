@@ -4,9 +4,6 @@
     "description": "This is a image editor extension for chromium based browsers. Developed by KFH.",
     "manifest_version": 3,
     "author": "KFH FREELANCER",
-    "icons": {
-        "128": "icon.png"
-    },
     "action": {
         "default_popup": "popup.html"
     }
