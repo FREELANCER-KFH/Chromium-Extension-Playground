@@ -19,21 +19,37 @@
         <p>Author: <a href="https://github.com/FREELANCER-KFH">KFH Freelancer</a></p>"
     </div>
     <div>
-        <canvas id="canvas"></canvas>
-        <button id="download"></button>
-        <button id="undo"></button>
-        <button id="redo"></button>
-        <button id="clear"></button>
-        <button id="color"></button>
-        <button id="brush"></button>
-        <button id="eraser"></button>
-        <button id="text"></button>
-        <button id="image"></button>
-        <button id="crop"></button>
-        <button id="rotate"></button>
-        <button id="resize"></button>
-        <button id="save"></button>
-        <button id="close"></button>
+        <h2>Image Editor</h2>
+        <div>
+            <label for="image">Image</label>
+            <input type="file" id="image" accept="image/*">
+        </div>
+        <div>
+            <label for="width">Width</label>
+            <input type="number" id="width" value="0">
+        </div>
+        <div>
+            <label for="height">Height</label>
+            <input type="number" id="height" value="0">
+        </div>
+        <div>
+            <label for="quality">Quality</label>
+            <input type="number" id="quality" value="100">
+        </div>
+        <div>
+            <label for="output">Output</label>
+            <select id="output">
+                <option value="base64">Base64</option>
+                <option value="blob">Blob</option>
+            </select>
+        </div>
+        <div>
+            <button id="edit">Edit</button>
+        </div>
+        <div>
+            <label for="result">Result</label>
+            <textarea id="result"></textarea>
+        </div>
     </div>
 </body>
 </html>
