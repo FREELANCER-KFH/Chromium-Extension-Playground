@@ -25,6 +25,50 @@
             <input type="file" id="image" accept="image/*">
         </div>
         <div>
+            <label for="type">Type</label>
+            <select id="type">
+                <option value="image/jpeg">JPEG</option>
+                <option value="image/png">PNG</option>
+                <option value="image/webp">WEBP</option>
+            </select>
+        </div>
+        <div>
+            <label for="scale">Scale</label>
+            <input type="number" id="scale" value="1">
+        </div>
+        <div>
+            <label for="rotate">Rotate</label>
+            <input type="number" id="rotate" value="0">
+        </div>
+        <div>
+            <label for="flip">Flip</label>
+            <select id="flip">
+                <option value="none">None</option>
+                <option value="horizontal">Horizontal</option>
+                <option value="vertical">Vertical</option>
+            </select>
+        </div>
+        <div>
+            <label for="crop">Crop</label>
+            <input type="checkbox" id="crop">
+        </div>
+        <div>
+            <label for="cropX">Crop X</label>
+            <input type="number" id="cropX" value="0">
+        </div>
+        <div>
+            <label for="cropY">Crop Y</label>
+            <input type="number" id="cropY" value="0">
+        </div>
+        <div>
+            <label for="cropWidth">Crop Width</label>
+            <input type="number" id="cropWidth" value="0">
+        </div>
+        <div>
+            <label for="cropHeight">Crop Height</label>
+            <input type="number" id="cropHeight" value="0">
+        </div>
+        <div>
             <label for="width">Width</label>
             <input type="number" id="width" value="0">
         </div>
