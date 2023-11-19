@@ -1,99 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>KFH Image Editor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor de Imágenes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <h1>KFH Image Editor</h1>
-        <p>Image Editor for KFH</p>
-        <p>Version: 1.0.0</p>
-        <p>Author: <a href="https://github.com/FREELANCER-KFH">KFH Freelancer</a></p>"
+  <input type="file" id="imageInput" accept="image/*">
+  <button id="loadImage">Cargar Imagen</button>
+  <canvas id="canvas" width="600" height="400"></canvas>
+  <div id="toolsPanel">
+    <div class="toolGroup">
+      <label>Filtros CSS</label>
+      <select id="filterSelect">
+        <option value="none">Ninguno</option>
+        <option value="grayscale(100%)">Escala de grises</option>
+        <option value="sepia(100%)">Sepia</option>
+        <option value="invert(100%)">Invertir colores</option>
+      </select>
     </div>
-    <div>
-        <h2>Image Editor</h2>
-        <div>
-            <label for="image">Image</label>
-            <input type="file" id="image" accept="image/*">
-        </div>
-        <div>
-            <label for="type">Type</label>
-            <select id="type">
-                <option value="image/jpeg">JPEG</option>
-                <option value="image/png">PNG</option>
-                <option value="image/webp">WEBP</option>
-            </select>
-        </div>
-        <div>
-            <label for="scale">Scale</label>
-            <input type="number" id="scale" value="1">
-        </div>
-        <div>
-            <label for="rotate">Rotate</label>
-            <input type="number" id="rotate" value="0">
-        </div>
-        <div>
-            <label for="flip">Flip</label>
-            <select id="flip">
-                <option value="none">None</option>
-                <option value="horizontal">Horizontal</option>
-                <option value="vertical">Vertical</option>
-            </select>
-        </div>
-        <div>
-            <label for="crop">Crop</label>
-            <input type="checkbox" id="crop">
-        </div>
-        <div>
-            <label for="cropX">Crop X</label>
-            <input type="number" id="cropX" value="0">
-        </div>
-        <div>
-            <label for="cropY">Crop Y</label>
-            <input type="number" id="cropY" value="0">
-        </div>
-        <div>
-            <label for="cropWidth">Crop Width</label>
-            <input type="number" id="cropWidth" value="0">
-        </div>
-        <div>
-            <label for="cropHeight">Crop Height</label>
-            <input type="number" id="cropHeight" value="0">
-        </div>
-        <div>
-            <label for="width">Width</label>
-            <input type="number" id="width" value="0">
-        </div>
-        <div>
-            <label for="height">Height</label>
-            <input type="number" id="height" value="0">
-        </div>
-        <div>
-            <label for="quality">Quality</label>
-            <input type="number" id="quality" value="100">
-        </div>
-        <div>
-            <label for="output">Output</label>
-            <select id="output">
-                <option value="base64">Base64</option>
-                <option value="blob">Blob</option>
-            </select>
-        </div>
-        <div>
-            <button id="edit">Edit</button>
-        </div>
-        <div>
-            <label for="result">Result</label>
-            <textarea id="result"></textarea>
-        </div>
+    <div class="toolGroup">
+      <label>Herramientas de Dibujo</label>
+      <button id="brushTool">Pincel</button>
+      <button id="highlightTool">Resaltador</button>
+      <button id="eraserTool">Borrador</button>
     </div>
+    <div class="toolGroup">
+      <label>Texto</label>
+      <input type="text" id="textInput" placeholder="Texto...">
+      <button id="addText">Agregar Texto</button>
+      <label>Tamaño del Texto</label>
+      <input type="number" id="textSize" value="16">
+    </div>
+    <div class="toolGroup">
+      <button id="copy">Copiar</button>
+      <button id="paste">Pegar</button>
+    </div>
+    <div class="toolGroup">
+      <button id="save">Guardar</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>

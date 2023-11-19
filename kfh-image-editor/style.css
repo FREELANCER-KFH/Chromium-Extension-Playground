@@ -1,22 +1,49 @@
-body{
-    width: 500px;
-    height: 500px;
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    color: #333;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  input, select, button {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: 1px solid #4caf50;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #canvas {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    cursor: crosshair;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #toolsPanel {
+    margin-top: 20px;
+  }
+  
+  .toolGroup {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  #textInput {
+    width: 200px;
+  }
+  
