@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('filterSelect').addEventListener('change', function () {
       const filter = document.getElementById('filterSelect').value;
       ctx.filter = filter;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
     });
   
