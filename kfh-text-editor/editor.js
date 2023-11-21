@@ -31,6 +31,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  // Tachado
+  function tachado() {
+    if (texto.style.textDecoration === "line-through") {
+      texto.style.textDecoration = "none";
+    } else {
+      texto.style.textDecoration = "line-through";
+    }
+  }
+
   // Función para crear un nuevo documento
   function nuevo() {
     texto.value = "";
@@ -135,6 +144,8 @@ document.addEventListener("DOMContentLoaded", function() {
       cursiva();
     } else if (elemento.id === "subrayado"){
       subrayado();
+    } else if (elemento.id === "tachado"){
+      tachado();
     } else if (elemento.id === "abrir") {
       abrir();
     } else if (elemento.id === "guardar") {
