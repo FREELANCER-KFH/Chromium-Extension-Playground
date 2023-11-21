@@ -4,6 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
   let texto = document.getElementById("texto");
   let botones = document.getElementById("botones");
 
+  // Negrita
+  function negrita() {
+    if (texto.style.fontWeight === "bold") {
+      texto.style.fontWeight = "normal";
+    } else {
+      texto.style.fontWeight = "bold";
+    }
+  }
+
   // Función para crear un nuevo documento
   function nuevo() {
     texto.value = "";
@@ -102,14 +111,15 @@ document.addEventListener("DOMContentLoaded", function() {
     let elemento = event.target;
     if (elemento.id === "nuevo") {
       nuevo();
+    } else if(elemento.id === "negrita"){
+      negrita();
     } else if (elemento.id === "abrir") {
       abrir();
     } else if (elemento.id === "guardar") {
       guardar();
     } else if (elemento.id === "guardar-como") {
       guardarComo();
-    }
-    else if (elemento.id === "eliminar") {
+    } else if (elemento.id === "eliminar") {
       eliminar();
     } else if (elemento.id === "imprimir") {
       imprimir();
