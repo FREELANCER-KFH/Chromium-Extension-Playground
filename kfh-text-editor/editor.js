@@ -22,6 +22,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  // Subrayado
+  function subrayado() {
+    if (texto.style.textDecoration === "underline") {
+      texto.style.textDecoration = "none";
+    } else {
+      texto.style.textDecoration = "underline";
+    }
+  }
+
   // Función para crear un nuevo documento
   function nuevo() {
     texto.value = "";
@@ -124,6 +133,8 @@ document.addEventListener("DOMContentLoaded", function() {
       negrita();
     } else if (elemento.id === "cursiva"){
       cursiva();
+    } else if (elemento.id === "subrayado"){
+      subrayado();
     } else if (elemento.id === "abrir") {
       abrir();
     } else if (elemento.id === "guardar") {
