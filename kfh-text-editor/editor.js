@@ -13,6 +13,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  // Cursiva
+  function cursiva() {
+    if (texto.style.fontStyle === "italic") {
+      texto.style.fontStyle = "normal";
+    } else {
+      texto.style.fontStyle = "italic";
+    }
+  }
+
   // Función para crear un nuevo documento
   function nuevo() {
     texto.value = "";
@@ -113,6 +122,8 @@ document.addEventListener("DOMContentLoaded", function() {
       nuevo();
     } else if(elemento.id === "negrita"){
       negrita();
+    } else if (elemento.id === "cursiva"){
+      cursiva();
     } else if (elemento.id === "abrir") {
       abrir();
     } else if (elemento.id === "guardar") {
