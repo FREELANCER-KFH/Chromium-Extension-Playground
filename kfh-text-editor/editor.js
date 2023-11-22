@@ -42,27 +42,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // derecha
   function derecha() {
-    if (texto.style.textAlign === "right") {
-      texto.style.textAlign = "left";
-    } else {
+    if (texto.style.textAlign !== "right") {
       texto.style.textAlign = "right";
     }
   }
 
   // Centrado
   function centrado() {
-    if (texto.style.textAlign === "center") {
-      texto.style.textAlign = "left";
-    } else {
+    if (texto.style.textAlign !== "center") {
       texto.style.textAlign = "center";
     }
   }
 
   // izquierda
   function izquierda() {
-    if (texto.style.textAlign === "left") {
-      texto.style.textAlign = "right";
-    } else {
+    if (texto.style.textAlign !== "left") {
       texto.style.textAlign = "left";
     }
   }
