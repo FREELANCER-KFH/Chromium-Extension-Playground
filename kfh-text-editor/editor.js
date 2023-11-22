@@ -40,6 +40,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  // derecha
+  function derecha() {
+    if (texto.style.textAlign === "right") {
+      texto.style.textAlign = "left";
+    } else {
+      texto.style.textAlign = "right";
+    }
+  }
+
   // Función para crear un nuevo documento
   function nuevo() {
     texto.value = "";
@@ -146,7 +155,9 @@ document.addEventListener("DOMContentLoaded", function() {
       subrayado();
     } else if (elemento.id === "tachado"){
       tachado();
-    } else if (elemento.id === "abrir") {
+    } else if (elemento.id === "derecha"){
+      derecha();
+    }else if (elemento.id === "abrir") {
       abrir();
     } else if (elemento.id === "guardar") {
       guardar();
