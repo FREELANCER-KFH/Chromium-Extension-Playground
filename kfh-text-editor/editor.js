@@ -49,6 +49,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  // Centrado
+  function centrado() {
+    if (texto.style.textAlign === "center") {
+      texto.style.textAlign = "left";
+    } else {
+      texto.style.textAlign = "center";
+    }
+  }
+
   // Función para crear un nuevo documento
   function nuevo() {
     texto.value = "";
@@ -157,7 +166,9 @@ document.addEventListener("DOMContentLoaded", function() {
       tachado();
     } else if (elemento.id === "derecha"){
       derecha();
-    }else if (elemento.id === "abrir") {
+    } else if (elemento.id ="centrado"){
+      centrado();
+    } else if (elemento.id === "abrir") {
       abrir();
     } else if (elemento.id === "guardar") {
       guardar();
