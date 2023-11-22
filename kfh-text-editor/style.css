@@ -6,19 +6,19 @@ body {
     text-align: center;
   }
   
-  #editor {
+  .editor {
     width: 100%;
     height: 500px;
     border: 1px solid black;
   }
   
-  #texto {
+  .texto {
     width: 100%;
     height: 100%;
     font-size: 16px;
   }
   
-  #botones {
+  .botones {
     width: 100%;
     height: 50px;
     background-color: #ccc;
@@ -26,7 +26,7 @@ body {
     justify-content: space-around;
   }
   
-  #nuevo, #abrir, #guardar {
+  .nuevo, .abrir, .guardar {
     width: 100px;
     height: 50px;
     background-color: #fff;
