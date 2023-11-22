@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // derecha
   function derecha() {
     if (texto.style.textAlign !== "right") {
+
       texto.style.textAlign = "right";
     }
   }
@@ -58,6 +59,13 @@ document.addEventListener("DOMContentLoaded", function() {
   function izquierda() {
     if (texto.style.textAlign !== "left") {
       texto.style.textAlign = "left";
+    }
+  }
+
+  // Justificado
+  function justificado() {
+    if (texto.style.textAlign !== "justify") {
+      texto.style.textAlign = "justify";
     }
   }
 
@@ -173,6 +181,8 @@ document.addEventListener("DOMContentLoaded", function() {
       centrado();
     } else if (elemento.id = "izquierda"){
       izquierda();
+    } else if (elemento.id="justificado"){
+      justificado();
     } else if (elemento.id === "abrir") {
       abrir();
     } else if (elemento.id === "guardar") {
