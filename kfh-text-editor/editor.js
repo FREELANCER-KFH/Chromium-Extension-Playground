@@ -58,6 +58,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  // izquierda
+  function izquierda() {
+    if (texto.style.textAlign === "left") {
+      texto.style.textAlign = "right";
+    } else {
+      texto.style.textAlign = "left";
+    }
+  }
+
   // Función para crear un nuevo documento
   function nuevo() {
     texto.value = "";
@@ -168,6 +177,8 @@ document.addEventListener("DOMContentLoaded", function() {
       derecha();
     } else if (elemento.id ="centrado"){
       centrado();
+    } else if (elemento.id = "izquierda"){
+      izquierda();
     } else if (elemento.id === "abrir") {
       abrir();
     } else if (elemento.id === "guardar") {
